@@ -15,12 +15,14 @@ class SpellChecker
 
         changed_array = words_array.map do |word|
         if dictionary.include?(word)
-            return word
+            word = word
         else
-            return "~#{word}~"
+            word = "~#{word}~"
         end
-    end
-    return changed_array.join(' ')
+        end
+
+        return changed_array.join(' ')
+     
     end
 
 

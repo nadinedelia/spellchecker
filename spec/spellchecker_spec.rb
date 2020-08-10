@@ -15,7 +15,7 @@ describe SpellChecker do
     end
 
     it 'returns a changed string consisting of more than 1 word correctly if spelled wrong' do
-        expect(subject.check('hlleo world')).to eq '~hlleo world~'
+        expect(subject.check('hlleo world')).to eq '~hlleo~ world'
     end
 
 end
