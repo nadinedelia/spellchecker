@@ -20,8 +20,35 @@ in                |           out
 
 'hello'                     'hello'
 
+'hlleo'                     '~hlleo~'
+
 'hello there'               'hello there'
 
 'hlleo there'               '~hlleo~ there'
 
 23                          throw error
+
+____________________________________________
+
+in                              |           out
+string = 'hlleo world'                 new_string = '~hlleo~ world'
+
+
+words_array = string.split(' ')
+
+words_array = ['hlleo', 'world']
+
+if included -> return word
+
+else -> return "#~{word}~"
+
+
+changed_array = ['~hlleo~ world']
+
+____________________________________________-
+
+if string is a string
+...map trhough arrray and ...
+
+else raise "not a string"
+

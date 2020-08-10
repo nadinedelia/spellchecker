@@ -34,6 +34,12 @@ end
         expect(subject.check('hello world thre is sun')).to eq 'hello world ~thre~ is sun'
     end
 
-end
+    end
+
+    context 'edge cases' do
+        it 'throws and error if not a string' do
+            expect(subject.check(2)).to eq 'not a string' 
+        end
+    end
 
 end

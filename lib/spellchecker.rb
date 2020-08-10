@@ -11,8 +11,8 @@ class SpellChecker
 
     def check(string)
 
+        if string.is_a? String
         words_array = string.split(' ')
-
         changed_array = words_array.map { |word|
         if dictionary.include?(word)
             word = word
@@ -21,8 +21,8 @@ class SpellChecker
         end
     }
         return changed_array.join(' ')
-     
-    end
-
-
+else 
+    return "not a string"
 end
+    end
+    end
