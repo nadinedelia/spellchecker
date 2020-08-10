@@ -1,0 +1,27 @@
+word processor
+
+spell checker
+
+english
+
+incorrectly spelled word -> highlighted
+
+dictionary -> make yourself
+
+
+wordbank = ['are', 'hello', 'there']
+
+
+in                |           out
+
+'are'                       'are'
+
+'aer'                       '~aer~'
+
+'hello'                     'hello'
+
+'hello there'               'hello there'
+
+'hlleo there'               '~hlleo~ there'
+
+23                          throw error
